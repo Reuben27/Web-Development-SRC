@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+
+  <style>
+    .bg-gradient {
+      background-image: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    }
+
+    #about {
+      background-image: linear-gradient(90deg, #7e7dd1 0%, #9ccd5d 100%), linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+      /* replace with your desired gradient styles */
+    }
+
+    .bg-gradient-two {
+      background-image: radial-gradient(circle at center, #f6d365, #fda085);
+      /* replace with your desired gradient styles */
+    }
+
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.1);
+    }
+
+    .subheading:before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #667eea;
+      margin-bottom: 10px;
+    }
+
+    .subheading-link {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #667eea;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .subheading-link:hover {
+      color: #764ba2;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes enter {
+      0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-enter {
+      animation: enter 1s ease-in-out;
+    }
+
+    @keyframes enter-left {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-enter-left {
+      animation: enter-left 1s ease-in-out;
+    }
+
+    footer {
+      height: max-content;
+      font-family: 'Shizuru', cursive;
+    }
+
+    body {
+      font-family: 'Times New Roman', cursive;
+    }
+
+    .bg-gradient-three {
+      background-color: #27829c;
+    }
+
+    .container.mx-auto {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="bg-gray-100 py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold text-gray-800 ml-12"
+          style="font-family: 'Tilt Prism', cursive;font-family: 'Tilt Prism', cursive;">
+          Welcome to My Portfolio </h1>
+      </div>
+      <div>
+        <a href="index.html" class="subheading-link mx-4">Home</a>
+        <a href="#projects" class="subheading-link mx-4">Projects</a>
+        <a href="#about" class="subheading-link mx-4">Achievements</a>
+        <a href="#contact" class="subheading-link mx-4">Contacts</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-gradient py-10">
+    <div class="container mx-auto flex">
+      <div class="text-left">
+        <h1 class="mt-12 text-4xl text-white font-bold text-shadow ml-12 animate-enter-left">Rupak Banerjee</h1>
+        <p class="mt-20 text-xl text-white ml-12">
+          A passionate Entrepreneur with a love for Tech
+          <br><br>
+          Greetings from <b>Rupak</b>!!<br> So here with my first website in my first year of IITGN.<br> Enjoying and
+          Exploring to the fullest. Still miles to go..<br>
+          Cheers!!
+        </p>
+      </div>
+      <div class="flex justify-end">
+        <img src="Img/R2.jpg" alt="This is an img" width="350" class="rounded-lg my-4 ml-80 animate-enter"
+          onmouseover="this.src='Img/Rupak.jpg'" onmouseout="this.src='Img/R2.jpg'">
+      </div>
+    </div>
+  </header>
+
+  <section id="projects" class="bg-gradient-two py-12">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center" style="font-family: 'Tilt Prism', cursive;">My Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+        <!-- Project Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+          <img src="Img/pp.jpg" alt="Metis" class="w-full h-56" onmouseover="this.src='Img/metis.jpg'"
+            onmouseout="this.src='Img/pp.jpg'">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Personal Portfolio (Metis)</h3>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus at
+              felis scelerisque varius.</p>
+            <div class="flex items-center mt-4">
+              <button class="px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">Learn
+                More</button>
+              <span class="ml-4 text-gray-600">4 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+          <img src="Img/car.jpg" alt="Self-driving Car" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Self-driving, Voice and Bluetooth Controlled Car</h3>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus at
+              felis scelerisque varius.</p>
+            <div class="flex items-center mt-4">
+              <button class="px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">Learn
+                More</button>
+              <span class="ml-4 text-gray-600">10 min read</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+          <img src="Img/Carpentry1.jpg" alt="Carpentry" class="w-full h-56 object-cover"
+            onmouseover="this.src='Img/Carpentry2.jpg'" onmouseout="this.src='Img/Carpentry1.jpg'">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Trade Carpentry (Stool)</h3>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus at
+              felis scelerisque varius.</p>
+            <div class="flex items-center mt-4">
+              <button class="px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">Learn
+                More</button>
+              <span class="ml-4 text-gray-600">4 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+          <img src="Img/buddhal1.jpg" alt="Laser" class="w-full h-56" onmouseover="this.src='Img/En.jpg'"
+            onmouseout="this.src='Img/buddhal1.jpg'">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Trade Laser Cutting & Engraving</h3>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus at
+              felis scelerisque varius.</p>
+            <div class="flex items-center mt-4">
+              <button class="px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">Learn
+                More</button>
+              <span class="ml-4 text-gray-600">4 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+          <img src="Img/Hogwarts1.jpg" alt="3D" class="w-full h-56" onmouseover="this.src='Img/3d2.jpg'"
+            onmouseout="this.src='Img/Hogwarts1.jpg'">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Trade 3D printing (Additive Manufacturing)</h3>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus at
+              felis scelerisque varius.</p>
+            <div class="flex items-center mt-4">
+              <button class="px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">Learn
+                More</button>
+              <span class="ml-4 text-gray-600">4 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+          <img src="Img/Web.jpg" alt="Webchat" class="w-full h-56 object-cover" onmouseover="this.src='Img/Web2.jpg'"
+            onmouseout="this.src='Img/Web.jpg'">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Webext (Web Chat Application) [In progress]</h3>
+            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget purus at
+              felis scelerisque varius.</p>
+            <div class="flex items-center mt-4">
+              <button class="px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-600 focus:outline-none">Learn
+                More</button>
+              <span class="ml-4 text-gray-600">7 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8" style="font-family: 'Tilt Prism', cursive;">My Achievements</h2>
+      <ol class="list-decimal ml-8 mb-4">
+        <li class="font-bold italic">Academics
+          <ul class="list-disc ml-8">
+            <li>BTech at IITGN</li>
+            <li>School Topper at St.Stephen's ICSE 10th</li>
+            <li>A letter from CM for State AIR 8 in ICSE 10th</li>
+            <li>School Topper at IGMHS CBSE 10+2</li>
+            <li>Qualified PRMO</li>
+            <li>GWR (Guinness World Records) Holder at Science City Kolkata (Largest Astronomy class)</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <footer id="contact" class="bg-gray-800 text-white flex justify-around flex-col sm:flex-row py-10">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">© 2023 My Portfolio. All rights reserved.</p>
+      <div class="flex justify-center mt-4">
+        <a href="https://www.instagram.com/rupak2k02/" target="_blank" rel="noopener noreferrer"
+          class="text-gray-500 hover:text-white mx-2 mt-1">
+          <svg class="h-7 w-7 fill-current" viewBox="0 0 102 102">
+            <!-- Instagram -->
+            <defs xmlns="http://www.w3.org/2000/svg">
+              <radialGradient id="a" cx="6.601" cy="99.766" r="129.502" gradientUnits="userSpaceOnUse">
+                <stop offset=".09" stop-color="#fa8f21" />
+                <stop offset=".78" stop-color="#d82d7e" />
+              </radialGradient>
+              <radialGradient id="b" cx="70.652" cy="96.49" r="113.963" gradientUnits="userSpaceOnUse">
+                <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0" />
+                <stop offset="1" stop-color="#8c3aaa" />
+              </radialGradient>
+            </defs>
+            <path xmlns="http://www.w3.org/2000/svg" fill="url(#a)"
+              d="M25.865,101.639A34.341,34.341,0,0,1,14.312,99.5a19.329,19.329,0,0,1-7.154-4.653A19.181,19.181,0,0,1,2.5,87.694,34.341,34.341,0,0,1,.364,76.142C.061,69.584,0,67.617,0,51s.067-18.577.361-25.14A34.534,34.534,0,0,1,2.5,14.312,19.4,19.4,0,0,1,7.154,7.154,19.206,19.206,0,0,1,14.309,2.5,34.341,34.341,0,0,1,25.862.361C32.422.061,34.392,0,51,0s18.577.067,25.14.361A34.534,34.534,0,0,1,87.691,2.5a19.254,19.254,0,0,1,7.154,4.653A19.267,19.267,0,0,1,99.5,14.309a34.341,34.341,0,0,1,2.14,11.553c.3,6.563.361,8.528.361,25.14s-.061,18.577-.361,25.14A34.5,34.5,0,0,1,99.5,87.694,20.6,20.6,0,0,1,87.691,99.5a34.342,34.342,0,0,1-11.553,2.14c-6.557.3-8.528.361-25.14.361s-18.577-.058-25.134-.361"
+              data-name="Path 16" />
+            <path xmlns="http://www.w3.org/2000/svg" fill="url(#b)"
+              d="M25.865,101.639A34.341,34.341,0,0,1,14.312,99.5a19.329,19.329,0,0,1-7.154-4.653A19.181,19.181,0,0,1,2.5,87.694,34.341,34.341,0,0,1,.364,76.142C.061,69.584,0,67.617,0,51s.067-18.577.361-25.14A34.534,34.534,0,0,1,2.5,14.312,19.4,19.4,0,0,1,7.154,7.154,19.206,19.206,0,0,1,14.309,2.5,34.341,34.341,0,0,1,25.862.361C32.422.061,34.392,0,51,0s18.577.067,25.14.361A34.534,34.534,0,0,1,87.691,2.5a19.254,19.254,0,0,1,7.154,4.653A19.267,19.267,0,0,1,99.5,14.309a34.341,34.341,0,0,1,2.14,11.553c.3,6.563.361,8.528.361,25.14s-.061,18.577-.361,25.14A34.5,34.5,0,0,1,99.5,87.694,20.6,20.6,0,0,1,87.691,99.5a34.342,34.342,0,0,1-11.553,2.14c-6.557.3-8.528.361-25.14.361s-18.577-.058-25.134-.361"
+              data-name="Path 17" />
+            <path xmlns="http://www.w3.org/2000/svg" fill="#fff"
+              d="M461.114,477.413a12.631,12.631,0,1,1,12.629,12.632,12.631,12.631,0,0,1-12.629-12.632m-6.829,0a19.458,19.458,0,1,0,19.458-19.458,19.457,19.457,0,0,0-19.458,19.458m35.139-20.229a4.547,4.547,0,1,0,4.549-4.545h0a4.549,4.549,0,0,0-4.547,4.545m-30.99,51.074a20.943,20.943,0,0,1-7.037-1.3,12.547,12.547,0,0,1-7.193-7.19,20.923,20.923,0,0,1-1.3-7.037c-.184-3.994-.22-5.194-.22-15.313s.04-11.316.22-15.314a21.082,21.082,0,0,1,1.3-7.037,12.54,12.54,0,0,1,7.193-7.193,20.924,20.924,0,0,1,7.037-1.3c3.994-.184,5.194-.22,15.309-.22s11.316.039,15.314.221a21.082,21.082,0,0,1,7.037,1.3,12.541,12.541,0,0,1,7.193,7.193,20.926,20.926,0,0,1,1.3,7.037c.184,4,.22,5.194.22,15.314s-.037,11.316-.22,15.314a21.023,21.023,0,0,1-1.3,7.037,12.547,12.547,0,0,1-7.193,7.19,20.925,20.925,0,0,1-7.037,1.3c-3.994.184-5.194.22-15.314.22s-11.316-.037-15.309-.22m-.314-68.509a27.786,27.786,0,0,0-9.2,1.76,19.373,19.373,0,0,0-11.083,11.083,27.794,27.794,0,0,0-1.76,9.2c-.187,4.04-.229,5.332-.229,15.623s.043,11.582.229,15.623a27.793,27.793,0,0,0,1.76,9.2,19.374,19.374,0,0,0,11.083,11.083,27.813,27.813,0,0,0,9.2,1.76c4.042.184,5.332.229,15.623.229s11.582-.043,15.623-.229a27.8,27.8,0,0,0,9.2-1.76,19.374,19.374,0,0,0,11.083-11.083,27.716,27.716,0,0,0,1.76-9.2c.184-4.043.226-5.332.226-15.623s-.043-11.582-.226-15.623a27.786,27.786,0,0,0-1.76-9.2,19.379,19.379,0,0,0-11.08-11.083,27.748,27.748,0,0,0-9.2-1.76c-4.041-.185-5.332-.229-15.621-.229s-11.583.043-15.626.229"
+              data-name="Path 18" transform="translate(-422.637 -426.196)" />
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rupak-banerjee-739021207/" target="_blank" rel="noopener noreferrer"
+          class="text-gray-500 hover:text-white mx-2">
+          <svg class="h-9 w-9 fill-current" viewBox="0 0 48 48">
+            <!-- LinkedIn -->
+            <path xmlns="http://www.w3.org/2000/svg" fill="#0078d4"
+              d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z" />
+            <path xmlns="http://www.w3.org/2000/svg"
+              d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364 c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274 L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479 C18,16.523,16.521,18,14.485,18H18v19H11z"
+              opacity=".05" />
+            <path xmlns="http://www.w3.org/2000/svg" fill="#fff"
+              d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12 c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698 c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19 c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z" />
+          </svg>
+        </a>
+
+        <a href="https://www.facebook.com/roop1358/" target="_blank" rel="noopener noreferrer"
+          class="text-gray-500 hover:text-white mx-2 mt-1">
+          <svg class="h-7 w-7 fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40"
+            style="enable-background:new 0 0 40 40;" xml:space="preserve">
+            <!-- Facebook -->
+            <style type="text/css">
+              .st0 {
+                fill: url(#SVGID_1_);
+              }
+
+              .st1 {
+                fill: #FFFFFF;
+              }
+            </style>
+            <linearGradient xmlns="http://www.w3.org/2000/svg" id="SVGID_1_" gradientUnits="userSpaceOnUse"
+              x1="-277.375" y1="406.6018" x2="-277.375" y2="407.5726"
+              gradientTransform="matrix(40 0 0 -39.7778 11115.001 16212.334)">
+              <stop offset="0" style="stop-color:#0062E0" />
+              <stop offset="1" style="stop-color:#19AFFF" />
+            </linearGradient>
+            <path xmlns="http://www.w3.org/2000/svg" class="st0"
+              d="M16.7,39.8C7.2,38.1,0,29.9,0,20C0,9,9,0,20,0s20,9,20,20c0,9.9-7.2,18.1-16.7,19.8l-1.1-0.9h-4.4L16.7,39.8z" />
+            <path xmlns="http://www.w3.org/2000/svg" class="st1"
+              d="M27.8,25.6l0.9-5.6h-5.3v-3.9c0-1.6,0.6-2.8,3-2.8h2.6V8.2c-1.4-0.2-3-0.4-4.4-0.4c-4.6,0-7.8,2.8-7.8,7.8V20  h-5v5.6h5v14.1c1.1,0.2,2.2,0.3,3.3,0.3c1.1,0,2.2-0.1,3.3-0.3V25.6H27.8z" />
+          </svg>
+        </a>
+        <div class="flex justify-center flex-col text-center ml-6">
+          <div class="flex m-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+              class="bi bi-envelope mt-1 mr-2" viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg>
+            <div class="">rupak.banerjee@iitgn.ac.in</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg height="180" width="5">
+      <defs>
+        <linearGradient id="fadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="white" stop-opacity="0"></stop>
+          <stop offset="50%" stop-color="white" stop-opacity="1"></stop>
+          <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="2" height="180" style="fill: url('#fadeGrad'); shape-rendering: crispEdges;"></rect>
+    </svg>
+
+    <div class="flex items-center flex-col">
+      <div>Have any Questions?</div>
+      <input type="text" name="email" id="" placeholder="Mail the question to..."
+        class="p-2 my-4 border-2 border-black rounded-md m-2 text-black">
+      <button type="submit"
+        class="border-2 border-white rounded-md p-2 bg-gray-800 hover:bg-yellow-300 hover:text-gray-900 hover:border-yellow-300">Shoot
+        It!!!</button>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
