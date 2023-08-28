@@ -1,0 +1,16 @@
+*{background-color:rgb(188, 211, 237);
+    
+}
+h1{
+color:sienna;
+}
+textarea{
+    background-color: rgb(251, 230, 251);
+    border: solid;
+    width: 400px;
+
+}
+button{
+background-color:rgb(201, 231, 173);
+width: 80px
+}
