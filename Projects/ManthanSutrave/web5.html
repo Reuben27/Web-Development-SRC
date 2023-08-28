@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleAA.css">
+</head>
+<body>
+
+<nav>
+<ul class="scroll-navbar">
+  <li class="scroll-nav-item"><a href="#home">Home</a></li>
+  <li class="scroll-nav-item"><a href="#about">About me</a></li>
+  <li class="scroll-nav-item"><a href="#Education">Education</a></li>
+  <li class="scroll-nav-item"><a href="#contact">Contact me</a></li>
+</ul>
+</nav>
+
+<div id="home" class="section"> 
+  <h1>Welcome to my Website</h1>
+</div>
+<div id="about" class="section">
+  <h1>
+    About me <br>
+    <img src="PXL_20230825_180250935~2.jpg" alt="image" style="height: 150px" style="width: 175px;" style="border-radius: 60%;"> <br>
+    Hello guys, I'm a Graduate Student currently pursing my masters in Civil Engineering.
+  </h1>
+</div>
+<div id="Education" class="section">
+  <h1>
+    Education <br>
+    1. Btech - Civil  Engineering (Mumbai University) <br>
+    2. Diploma - Civil  Engineering (MSBTE)
+  </h1>
+</div>
+<div id="contact" class="section">
+  <h1>
+    Contact me <br>
+    You can Contact me at manthansutrave@gmail.com
+  </h1>
+</div>
+
+<script>
+  // Smooth scrolling behavior
+  document.querySelectorAll('ul.scroll-navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
+

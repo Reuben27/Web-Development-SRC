@@ -1,0 +1,83 @@
+
+    /* Basic styling for the navigation bar */
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    }
+
+    li.scroll-nav-item {
+      float: left;
+    }
+
+    li.scroll-nav-item a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    li.scroll-nav-item a:hover {
+      background-color: #555;
+    }
+
+    /* Styling for the sections 
+    .section {
+      height: 800px;
+      padding: 100px;
+      text-align: center;
+      font-size: 24px;
+    }*/
+
+    #home {
+      margin: 0;
+      padding: 300px; 
+      font-size: xx-large;
+      font-style: bold;
+      background-image: url(https://source.unsplash.com/sfL_QOnmy00);
+      text-align: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+
+    }
+
+    #about {
+      margin: 0;
+      padding: 0; 
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(https://source.unsplash.com/sfL_QOnmy00);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    #Education {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(https://source.unsplash.com/TamMbr4okv4);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    #contact {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(https://source.unsplash.com/lUaaKCUANVI);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
