@@ -1,0 +1,47 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #555555;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f90142;
+    color: #fff;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.about {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #456d94;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #23921f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #92871f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
