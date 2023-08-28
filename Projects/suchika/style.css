@@ -1,0 +1,51 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+/* div{
+    background: url('Icon.jpg') center center/cover no-repeat;
+} */
+
+.home{
+
+    background: url('Windows-11-Bloom-Screensaver-Dark-scaled.jpg') center center/cover no-repeat;
+    /* background-color: white; */
+    height: 100vh;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.taskbar{
+    background: url('Icon.jpg') center center/cover no-repeat;
+    /* background-color: white; */
+    height: 30px;
+    
+    width: 50%;
+    position: absolute;  
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.startmenu{
+    position: absolute;
+    bottom: 52;
+    width: 100%;
+    transition: all 0.3s ease-in;
+
+}
+
+.startmenu img{
+    border-radius: 23px;
+}
+
+.right{
+    justify-self: flex end;
+    position: absolute;
+    right: 0;
+    margin: 8px 0;
+    height: 60%;
+}
