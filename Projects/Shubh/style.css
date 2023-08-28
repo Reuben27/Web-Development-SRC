@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://img.freepik.com/free-photo/dried-leaves-gray-blank-background_53876-102451.jpg?w=1060&t=st=1693243054~exp=1693243654~hmac=ab80a719b6af4726df9e8be87b3cb3eff82cbc3bf90e412c6e47d43570143e07");
+    background-size: 1545px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.name {
+    position: relative;
+    left: 800px;
+    top : 100px;
+}
