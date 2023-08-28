@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhils Portfolio</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://kit.fontawesome.com/886df012d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Cq1Bu6ZUgaAzL5Fw3N19MaOtvS9qk7dIJiPw3kAPpKxB//NwjclwRUKyKXbBqzZ+xdpap5bKW6A7f8t0q5Q9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+   <div class="container">
+    <nav>
+        <img src="/Users/nikhilkumarlal/Desktop/portfolio/logo.png" alt="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#works">My Work</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()" style="color: #405c8c;"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #143d85;"></i>
+    </nav> 
+    <div class="header-text">
+         <p>Engineering Student</p>
+         <h1>Hi I'm <span>Nikhil Kumar Lal</span><br>from IIT Gandhinagar </h1>
+    </div>
+     
+   </div>   
+</div>
+<!------------about--------------> 
+<div id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/user.png">
+            </div>
+            <div class="about-col-2  ">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate and ambitious engineering student at IIT Gandhinagar, having successfully cleared the challenging JEE Advanced exam. With a focus on Mechanical Engineering, I have completed my first year, during which I delved into various fields, including programming with Python and intermediate web development using HTML and CSS. My journey has been enriched by engaging in projects that blend mechanical and computational aspects, offering innovative solutions. Active participation in clubs like "Mean Mechanics" and association with esteemed organizations like Career Development Services have expanded my horizons. Now, I am excited to present my personal portfolio, featuring three active links—Skills, Experience, and Education—showcasing my achievements, projects, and journey towards excellence. Thank you for exploring my endeavors!</p>
+                <div class="tab-titles ">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>  
+                </div>
+                <div class="tab-contents active-tab" id="Skills"> 
+                    <ul>
+                        <li><span>Python</span><br>Proficient in Python programming language</li>
+                        <li><span>Mechanical Design and Prototyping</span><br>Expertise in designing and prototyping mechanical solutions</li>
+                        <li><span>Video Editing</span><br>Proficient in video editing, creating captivating visual content</li> 
+                        <li><span>Presentation Skills</span><br>Ability to create impactful and engaging presentations</li> 
+                        <li><span>Public Speaking</span><br>Confident and effective public speaking abilities</li> 
+                        <li><span>Web Development</span><br>Intermediate level in HTML and CSS, designing web app interfaces</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Core Team Member, Mean Mechanics - February 2023 to Present</span><br>> Played an integral role as a core member in Mean Mechanics, contributing to the exploration of cutting-edge mechanical concepts and technologies.<br>> Collaborated with a diverse team to ideate, design, and execute various projects and workshops aimed at enhancing practical skills in mechanical engineering.</li>
+                        <li><span>Social Team Member, Career Development Services - February 2023 to Present</span><br>> Actively participated as a social team member in Career Development Services, assisting in organizing and promoting various career-oriented events and workshops.<br>> Engaged with fellow students and industry professionals to create valuable networking opportunities and facilitate the exchange of knowledge and ideas.</li>
+                        <li><span>Volunteer, Blithchron'22</span><br>> Volunteered for Blithchron'22, contributing to the successful organization and execution of the event.<br>> Assisted in various event logistics, ensuring a seamless experience for participants and attendees.</li> 
+                        <li><span>Volunteer, Amalthea'22</span><br>> Contributed as a volunteer to Amalthea, actively supporting the event's organization and smooth operation.<br>> Helped in coordinating activities and engaging with participants, enriching the overall experience of the event.</li> 
+                        <li>These experiences have not only enriched my skills and knowledge but have also provided me with valuable insights into teamwork, leadership, and event management within the engineering domain.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Bachelor of Technology (B.Tech) in Mechanical Engineering<br>Indian Institute of Technology, Gandhinagar, Gujarat</span><br>Expected Completion: 2026</li>
+                        <li><span>Higher Secondary Certificate (HSC) - 12th Grade<br>Blooming Dales International School, Sri Ganganagar, Rajasthan</span><br>Year of Completion: 2021</li>
+                        <li><span>Secondary School Certificate (SSC) - 10th Grade<br>Sacred Heart Convent School, Fazilka, Punjab</span><br>Year of Completion: 2019</li>
+                    </ul>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div> 
+<!---------------------my work------------------>
+<div id="works">
+    <div id="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/3.jpg" alt="">
+                <div class="layer">
+                    <h3>SPARSH-BHASHI</h3>
+                    <p>Introducing "SPARSH-BHASHI," the Smart Braille Learning Device revolutionizing Braille education. Three interactive modes empower learners with sequential teaching, challenging tests, and step-by-step word training. With cost-effectiveness, user-friendly interface, and innovative mechanisms, our device enhances Braille learning. Complemented by a Braille keyboard, we bridge the education gap for the visually impaired, fostering independence and accessibility.</p>
+                    <a href="/Users/nikhilkumarlal/Desktop/portfolio/project-1/pro1.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aac527;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/pro2.jpeg" alt="">
+                <div class="layer">
+                    <h3>UrbanWings</h3>
+                    <p>Elevate bird-watching in urban areas with an adjustable height design, intelligent shade protection, and an automatic grain dispenser. Crafted using modern 3D printing and laser cutting techniques, it offers a harmonious blend of wood, acrylic, and recyclable plastic. This eco-friendly sanctuary provides an immersive nature connection, observation platforms, and educational opportunities, making bird-watching a mesmerizing and enriching experience for all.</p>
+                    <a href="/Users/nikhilkumarlal/Desktop/portfolio/project-2/pro2.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aac527;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media-3</h3>
+                    <p> 3It provides a more holistic view of who you are and what drives your curiosity and enthusiasm. Remember to share any notable experiences or achievements related to these hobbies to make them even more engaging to your website visitors.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aac527;"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media-3</h3>
+                    <p> 3It provides a more holistic view of who you are and what drives your curiosity and enthusiasm. Remember to share any notable experiences or achievements related to these hobbies to make them even more engaging to your website visitors.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aac527;"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media-3</h3>
+                    <p> 3It provides a more holistic view of who you are and what drives your curiosity and enthusiasm. Remember to share any notable experiences or achievements related to these hobbies to make them even more engaging to your website visitors.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aac527;"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="/Users/nikhilkumarlal/Desktop/portfolio/images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Social Media-3</h3>
+                    <p> 3It provides a more holistic view of who you are and what drives your curiosity and enthusiasm. Remember to share any notable experiences or achievements related to these hobbies to make them even more engaging to your website visitors.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aac527;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="see-more" class="btn">See More</a>
+        <a href="#" id="see-less" class="btn">See Less</a>
+    </div>
+</div>
+<!----------------Hobbies-------------------->
+ <div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                <i class="fa-solid fa-bowl-food" style="color: #000000;"></i>
+                <h2>Cooking</h2>
+                <p>As an avid cook and culinary explorer, I delight in experimenting with diverse cuisines and perfecting flavors. From savory dishes to mouthwatering desserts, I find joy in creating delectable recipes that tantalize the taste buds.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-biking" style="color: #000000;"></i>
+                <h2>Cycling</h2>
+                <p>Pedaling through scenic routes and embracing the freedom of the open road, I find solace and adventure in cycling. Exploring new trails and pushing my limits not only invigorate me but also foster a deep appreciation for nature and the beauty of the outdoors.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-camera-retro" style="color: #000000;"></i>
+                <h2>Photography</h2>
+                <p>Through the lens of my camera, I capture fleeting moments that tell compelling stories. Whether it's picturesque landscapes, candid portraits, or vibrant cityscapes, photography enables me to see the world from a unique perspective and preserve cherished memories for a lifetime.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-----------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="coltact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope" style="color: #aac527;"></i>nikhilkumar.lal@iitgn.ac.in</p>
+                <p><i class="fa-solid fa-phone" style="color: #aac527;"></i>8400721381</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/nikkhhhil/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="/Users/nikhilkumarlal/Desktop/portfolio/images/my-cv.pdf" download class="btn btn2">Download</a>
+            </div>
+            <div class="coltact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="wb">
+        <h1>My Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.8694318649054!2d72.6816739760118!3d23.21142850925289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2adec1f16d8d%3A0xdc447b8706689bc3!2sIndian%20Institute%20Of%20Technology%20Gandhinagar%20(IIT%20Gandhinagar)!5e0!3m2!1sen!2sin!4v1690117327943!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©️2023 Nikhil Kumar Lal. All rights reserved.</p>
+    </div>
+</div>
+<!----@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@----->
+<!---FOR ABOUT ME SECTION TO VIEW DIFFERENT TABS---->
+<script>
+    var tablinks=document.getElementsByClassName('tab-links');
+    var tabcontents=document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add('active-link'); 
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+
+<!---FOR MY WORK SECTION SEE MORE & SEE LESS BUTTON ACTION---->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const seeMoreBtn = document.getElementById("see-more");
+        const seeLessBtn = document.getElementById("see-less");
+        const hiddenWorks = document.querySelectorAll(".hidden");
+
+        seeLessBtn.style.display = "none"; // Initially hide "See Less" button
+
+        seeMoreBtn.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            hiddenWorks.forEach(function (work) {
+                work.style.display = "block";
+            });
+
+            // Toggle the "See More" and "See Less" buttons
+            seeMoreBtn.style.display = "none";
+            seeLessBtn.style.display = "block";
+        });
+
+        seeLessBtn.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            hiddenWorks.forEach(function (work) {
+                work.style.display = "none";
+            });
+
+            // Toggle the "See More" and "See Less" buttons
+            seeMoreBtn.style.display = "block";
+            seeLessBtn.style.display = "none";
+        });
+    });
+</script>
+<!---FOR NAV MENU FOR MOBILE---->
+<script>
+    var sidemeu=document.getElementById("sidemenu")
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<!---FOR goog;e form--->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5lXp3EeqMebY8Cry8wD4mlMR3A0DQsbwq4IgNRmh7zlvYkMG1pm_4zpsTToufz4aNUw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<!--------------back to top button----------------------->
+<a id="back-to-top-button" href="#"> <i class="fas fa-chevron-up"></i></a>
+<script>
+    // Get the Back to Top button element
+    const backToTopButton = document.getElementById('back-to-top-button');
+
+    // Show the Back to Top button when scrolling down
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    };
+
+    // Scroll to the top when the button is clicked
+    backToTopButton.onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
+</script>
+
+</body> 
+</html>

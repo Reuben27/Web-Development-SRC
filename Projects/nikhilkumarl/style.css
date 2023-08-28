@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+
+ body {
+    background: #fffdfd;
+    color: #000000 ;
+ } 
+
+ #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Users/nikhilkumarlal/Desktop/portfolio/background.png);
+    background-size: cover;
+    background-position: center;  
+ }
+/* dimension_for_main_site */
+.container{
+    padding: 10px 3%; 
+}
+.container nav img{
+    width: 180px;
+    height: 70px;
+    margin: 10px ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+/*alignment_of_the_links */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+/*for text in the link*/
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}  
+/*hover effect for the link*/
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #aac527;
+    position: absolute;
+    left: 0;
+    bottom: -6px ;
+    transition: 0.5s;
+}
+/*to the make the line blink only when the cursor is there*/
+nav ul li a:hover::after{
+    width: 100%;
+}
+/**/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px ;
+}  
+.header-text h1 span {
+    color: #aac527;
+}  
+/*----------------About-----------------*/
+#about{
+    padding: 80px 0;
+    color:  #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap   ;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;  
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+}
+.about-col-2 p{
+    color: #767771;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px  ;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer; 
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #aac527;
+    position: absolute;
+    left: 0;
+    bottom: -8px;  
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+} 
+.tab-contents ul li span{
+    color: #aac527;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+ .tab-contents.active-tab{
+    display: block;
+ }
+
+ /*-----------------hobbies-------------------*/
+ #hobbies{
+    padding: 30px 0;
+ }
+ .hobbies-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+ }
+.hobbies-list div{
+    background: #aaa9a9;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+.hobbies-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.hobbies-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.hobbies-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.hobbies-list div:hover{
+    background: #aac527;
+    transform: translateY(-10px);
+}
+/*-------------------My Work------------------------*/
+#works{
+    padding: 50px 2%;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(255, 253, 253, 0.6),#aac527);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 1500;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.layer p{
+    font-size: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: #aac527;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 3px solid #aac527;
+    padding: 14px 50px;
+    border-radius: 6px; 
+    text-decoration: none;
+    color: #000000;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #aac527;
+    text-decoration: solid;
+}
+/*-----------*/
+.hidden {
+    display: none;
+}
+
+#see-more.open {
+    display: none;
+}
+
+#see-less {
+    display: none;
+}
+.work-list {
+    grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+    grid-auto-rows: minmax(200px, auto); /* Set a minimum row height */
+}
+/*----------------contact----------------*/
+.coltact-left{
+    flex-basis: 35%;
+}
+.coltact-right{
+    flex-basis: 60%;
+}
+.coltact-left p{
+    margin-top: 30px;
+}
+.coltact-left p i{
+    margin-right: 15px;
+    font-size: 25px; 
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#767771;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #aac527;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #aac527;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #d5e38f;
+    padding: 15px;
+    margin: 15px;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #d8f28a;
+    margin-top: 0px;
+    font-weight: 300;
+}
+.copyright p{
+    color: #000000;
+}
+/* Map */
+iframe{
+    width: 100%;
+    height: 400px;
+}
+.wb{
+    padding: 0;
+}
+.wb h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: 45px;
+}
+/*-------------------for mobile------------------*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:700px){
+    #header{
+        background-image: url(/Users/nikhilkumarlal/Desktop/portfolio/pback.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 20px;
+    }
+    nav ul{
+        background:#aac527 ;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top:  50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px ;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 20px;
+        margin-right: 25px;
+    }
+    .coltact-right,.coltact-left{
+        flex-basis: 100%;
+    }
+    .coltact-left{
+        margin-left: 20px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    /*-----*/
+    .work-list {
+        grid-template-columns: repeat(1, 1fr); /* Change to 1 column */
+    }
+
+    .work {
+        margin-bottom: 30px; /* Add some space between images in the single column */
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #see-more {
+        display: block; /* Show "See More" button initially */
+    }
+
+    #see-less {
+        display: none; /* Hide "See Less" button initially */
+    }
+
+    #see-more.open {
+        display: none; /* Hide "See More" button when additional images are shown */
+    }
+
+    #see-less.open {
+        display: block; /* Show "See Less" button when additional images are shown */
+    }
+}
+#msg{
+    color: #aac527;
+    margin-top: -40px;
+    display: block;
+    margin-left: 15px;
+
+}
+
+/* Styling for the Back to Top button */
+#back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px;
+    background-color: #aac527;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+#back-to-top-button i {
+    margin-right: 5px;
+}
+
