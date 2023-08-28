@@ -1,0 +1,84 @@
+body {
+    background-color : mintcream;
+    
+}
+h1 {
+    color : blueviolet;
+    text-align: center;}
+ 
+p {
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    color : magenta;
+}
+
+p1 {
+  font-family: Times;
+  font-size: 20px;
+  text-align: bottom right;
+  color : red;
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
+}
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue !important;
+    }
+  }
