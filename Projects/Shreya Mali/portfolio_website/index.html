@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Shreya.png">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Shreya Mali</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.fade-in').each(function() {
+                    var position = $(this).offset().top;
+                    var scrollPosition = $(window).scrollTop() + $(window).height();
+                    if (position < scrollPosition) {
+                        $(this).addClass('show');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Shreya3.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-interests">Skills & Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h1>About Me</h1><br> 
+        <p>Hello there! I'm Shreya Mali, a second year student at IIT Gandhinagar.<br> Passionate about exploring the realms of technology and its impact on society.</p>
+    </section>
+
+    <section id="skills-interests" class="fade-in">
+        <h1>Skills and Interests</h1><br>
+        <p>As a technology enthusiast, I'm eager to explore various aspects of computer science and engineering. Here are some of my skills and interests:</p>
+        <ul>
+            <li>Programming Languages: Python, C and C++</li>
+            <li>Web Development: HTML and CSS</li>
+            <li>Machine Learning: Supervised Learning (Regression and Classification)</li>
+        </ul>
+        <p>Outside of the tech world, I enjoy Designing, Editing and Content writing.</p> <br> <br> <br>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out to me!</p>
+        <p>Email: <a href="mailto:shreya.mali@iitgn.ac.in">shreya.mali@iitgn.ac.in</a></p>
+        <p>Contact no: 8104720428</p>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/shreyamalii/">
+                <img src="instagram.png" alt="Instagram" class="icon">
+            </a>
+
+            <a href="https://twitter.com/">
+                <img src="twitter.png" alt="Twitter" class="icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/shreya-mali-881176242/">
+                <img src="linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+        </div>
+    </section>
+</body>
+</html>
