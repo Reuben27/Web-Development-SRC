@@ -1,0 +1,16 @@
+#greeting{
+    color:blue;
+    font-size: large;
+    font-weight: bold;
+    justify-content: center;
+
+}
+#name{
+    color:red;
+    background-color: beige;
+    font-style: oblique;
+    font-variant: calc();
+    font-weight:400;
+    font-size:100px;
+   ;
+}
