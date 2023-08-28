@@ -1,0 +1,117 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.design{
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+.boxe{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.clock{
+    width:100%;
+    height: 100%;
+    background: rgba(235, 0, 255, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+.boxe::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #f41b75;
+    border-radius: 25px;
+    position: absolute;
+    backdrop-filter: blur(60px);
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+}
+
+.boxe::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #419aff;
+    border-radius: 25px;
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    z-index: -1;
+}
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+#hrs::after{
+    content: 'Hours';
+}
+#mins::after{
+    content: 'Minutes';
+}
+#sec::after{
+    content: 'Seconds';
+}
+
+nav{
+    background: purple;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+label.bar{
+    color: white;
+    font-size: 35px;
+    line-height: 85px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a.active, a.hover{
+    transition: .5s;
+}
