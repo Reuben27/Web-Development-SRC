@@ -1,0 +1,35 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.education, .experience, .skills {
+    padding: 20px;
+}
+
+.education h2, .experience h2, .skills h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
